@@ -5,90 +5,280 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sharazad Ali | Personal Website</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pO4+YgD+fFZf3+2uTlH+V9tE7PtlPGh9c3Fh5b6bf5eM9O+N0y/2kSeY6OqXhw6A+0tPZxZLqXcqZpWvHW8jQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2 class="logo">Sharazad Ali</h2>
-      <nav>
-        <ul class="sidebar-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
 
-    <!-- Main Content -->
-    <main class="content">
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#about">Sharazad Ali</a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <!-- About -->
-      <section id="about" class="about-section">
-        <div class="about-container">
-          <img src="me.jpg" alt="Sharazad Ali" class="profile-pic">
-          <div class="about-text">
-            <h1>Hi, I’m Sharazad 👋</h1>
-            <p>
-              I’m a Master’s student in Statistics at UC Berkeley and a Rice University alum.
-              I’m passionate about data engineering, analytics, and using statistical methods 
-              to solve complex real-world problems in technology, healthcare, and business.
-            </p>
-            <div class="links">
-              <a href="Sharazad_Ali_Resume.pdf" target="_blank">📄 Resume</a>
-              <a href="https://www.linkedin.com/in/sharazad-ali" target="_blank">🔗 LinkedIn</a>
-              <a href="mailto:sia3@berkeley.edu">✉️ Email</a>
-            </div>
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Nice to meet you! <br> I'm <b>Sharazad Ali</b>.</h1>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="about-header">ABOUT ME</h2>
+      <div class="about-card shaded">
+        <div class="about-text">
+          <p>
+            I’m a Master’s student in Statistics at UC Berkeley and a Rice University alum.
+            I’m passionate about data engineering, analytics, and using statistical methods 
+            to solve complex real-world problems in technology, healthcare, and business.
+          </p>
+          <!-- Only Resume button here (big) -->
+          <div class="links spaced">
+            <a href="Sharazad_Ali_Resume.pdf" target="_blank" class="resume-link big">Resume ⤓</a>
           </div>
         </div>
-      </section>
 
-      <!-- Education -->
-      <section id="education">
-        <h2>Education</h2>
-        <ul>
-          <li><b>UC Berkeley</b> — M.A. in Statistics (Expected May 2026)</li>
-          <li><b>Rice University</b> — B.S. in Statistics, B.A. in Psychology, Minor in Data Science (May 2025)</li>
-        </ul>
-      </section>
+        <!-- vertical divider -->
+        <div class="about-divider"></div>
 
-      <!-- Experience -->
-      <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="job">
-          <h3>HP Inc. — Data Engineering Co-op</h3>
-          <p>Aug 2024 – Present</p>
-          <ul>
-            <li>Designed real-time monitoring system using Databricks + Airflow.</li>
-            <li>Migrated data from Redshift to Databricks Lakehouse.</li>
-            <li>Optimized ETL workflows, reducing processing time by 25%.</li>
+        <!-- keep the photo -->
+        <div class="about-image">
+          <img src="statistics.png" alt="Statistics graphic">
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="about-header">EDUCATION</h2>
+      <div class="timeline">
+
+        <!-- Berkeley tick (down) -->
+        <div class="timeline-tick tick-down edu-card">
+          <div class="timeline-content">
+            <img src="berkeleylogo.png" alt="UC Berkeley Logo" class="edu-logo">
+            <p class="edu-date less-space">May 2026</p>
+            <p class="edu-text"><b><i>M.A. Statistics</i></b><br>
+            Awards: Opportunity Award, Outreach Peer Ambassador, UC Berkeley D-Lab Consulting Fellowship</p>
+          </div>
+        </div>
+
+        <!-- Rice tick (up) -->
+        <div class="timeline-tick tick-up edu-card">
+          <div class="timeline-content">
+            <img src="ricelogo.jpg" alt="Rice University Logo" class="edu-logo">
+            <p class="edu-date">May 2025</p>
+            <p class="edu-text"><b><i>B.S. Statistics, B.A. Psychology, Data Science Minor</i></b><br>
+            Awards: Cum Laude of Engineering School, 4x President Honor Roll, Rice Trustee Distinguished Scholarship</p>
+          </div>
+        </div>
+
+        <!-- Vertical line connecting ticks -->
+        <div class="timeline-line"></div>
+
+      </div>
+
+      <!-- Relevant courses -->
+      <div class="relevant-courses">
+        <p><b><u>RELEVANT COURSES</u></b></p>
+        <p>Machine Learning, Linear Regression, Data Science Tools and Models, Advanced Probability, Computational Thinking, Research Methods, Data Visualization, Market Models, Applied Time Series and Forecasting</p>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience">
+      <h2 class="about-header">WORK EXPERIENCE</h2>
+
+      <!-- HP timeline-style card (two roles) -->
+      <div class="experience-card timeline-style">
+        <div class="experience-logo">
+          <img src="hp.png" alt="HP Logo">
+        </div>
+        <div class="experience-details">
+          <h3>HP INC.</h3>
+          <div class="timeline-inner">
+            <div class="timeline-item">
+              <span class="date">(Aug 2024 – Aug 2025)</span>
+              <p><b>Data Engineer I (Part-time)</b></p>
+              <p>Worked on data engineering solutions to improve efficiency and scalability of pipelines.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="date">(May 2024 – Aug 2024)</span>
+              <p><b>Data Engineer Intern</b></p>
+              <p>Analyzed end-to-end ETL pipeline latency and improved telemetry data processing efficiency.</p>
+            </div>
+          </div>
+          <ul class="skills">
+            <li>Python</li>
+            <li>Spark</li>
+            <li>SQL</li>
+            <li>Databricks</li>
+            <li>Airflow</li>
           </ul>
         </div>
-      </section>
+      </div>
 
-      <!-- Leadership -->
-      <section id="leadership">
-        <h2>Leadership</h2>
-        <p>Vice President of NSBE at Rice, Data Science Consultant at UC Berkeley D-Lab, Outreach Ambassador for the Statistics Department.</p>
-      </section>
+      <!-- P&G -->
+      <div class="experience-card timeline-style">
+        <div class="experience-logo">
+          <img src="pg.png" alt="P&G Logo">
+        </div>
+        <div class="experience-details">
+          <h3>PROCTER & GAMBLE</h3>
+          <div class="timeline-inner">
+            <div class="timeline-item">
+              <span class="date">(Jun 2022 – Aug 2022)</span>
+              <p><b>IT Data Analytics & Insight Intern</b></p>
+              <p>Developed data analytics solutions to support marketing and sales insights across global teams.</p>
+            </div>
+          </div>
+          <ul class="skills">
+            <li>SQL</li>
+            <li>R</li>
+            <li>Python</li>
+            <li>Power BI</li>
+            <li>Azure</li>
+          </ul>
+        </div>
+      </div>
 
-      <!-- Skills -->
-      <section id="skills">
-        <h2>Skills</h2>
-        <p><b>Languages:</b> Python, R, SQL, Java, Spark, Scala, HTML</p>
-        <p><b>Tools:</b> AWS, Databricks, Power BI, Azure, Airflow, GitHub</p>
-      </section>
+      <!-- Clutch Sports Data -->
+      <div class="experience-card timeline-style">
+        <div class="experience-logo">
+          <img src="clutchsports.png" alt="Clutch Sports Data Logo">
+        </div>
+        <div class="experience-details">
+          <h3>CLUTCH SPORTS DATA</h3>
+          <div class="timeline-inner">
+            <div class="timeline-item">
+              <span class="date">(Jun 2023 – Aug 2023)</span>
+              <p><b>Data Science Intern</b></p>
+              <p>Analyzed sports performance datasets and built predictive models for player statistics and team performance metrics.</p>
+            </div>
+          </div>
+          <ul class="skills">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Scikit-learn</li>
+          </ul>
+        </div>
+      </div>
 
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sia3@berkeley.edu">sia3@berkeley.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sharazad-ali" target="_blank">linkedin.com/in/sharazad-ali</a></p>
-      </section>
-    </main>
-  </div>
+      <!-- UC Berkeley D-Lab -->
+      <div class="experience-card timeline-style">
+        <div class="experience-logo">
+          <img src="dlab.png" alt="UC Berkeley D-Lab Logo">
+        </div>
+        <div class="experience-details">
+          <h3>UC BERKELEY D-LAB</h3>
+          <div class="timeline-inner">
+            <div class="timeline-item">
+              <span class="date">(Aug 2025 – Present)</span>
+              <p><b>Data Science Consultant</b></p>
+              <p>Provided data & statistical consulting and reproducible research support for graduate students and faculty across disciplines.</p>
+            </div>
+          </div>
+          <ul class="skills">
+            <li>R</li>
+            <li>Python</li>
+            <li>Reproducible Research</li>
+            <li>Statistical Modeling</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="about-header">SKILLS</h2>
+      <div class="skills-container">
+        <!-- Languages Box -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-icon">{}</span>
+            <h3>Languages</h3>
+          </div>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript/TypeScript</li>
+            <li>SQL</li>
+            <li>R</li>
+          </ul>
+        </div>
+        <!-- Databases & Libraries Box -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-icon">⛁</span>
+            <h3>Databases & Libraries</h3>
+          </div>
+          <ul>
+            <li>PostgreSQL, MongoDB</li>
+            <li>PyTorch, Scikit-learn</li>
+            <li>NumPy, Pandas</li>
+            <li>Matplotlib</li>
+          </ul>
+        </div>
+        <!-- Tools Box -->
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-icon">⚒</span>
+            <h3>Tools</h3>
+          </div>
+          <ul>
+            <li>Docker & Kubernetes</li>
+            <li>Linux/Unix & Shell Scripting</li>
+            <li>REST APIs</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="about-header">CONTACT ME</h2>
+      <div class="contact-cards">
+        <!-- LinkedIn Card: uses linkedin.png -->
+        <div class="contact-card">
+          <img src="linkedin.png" alt="LinkedIn" class="contact-logo">
+          <div class="contact-details">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/sharazad-ali" target="_blank">sharazadali</a>
+          </div>
+        </div>
+        <!-- Email Card -->
+        <div class="contact-card">
+          <i class="fas fa-envelope contact-icon"></i>
+          <div class="contact-details">
+            <strong>Email</strong>
+            <a href="mailto:sharyali16@gmail.com">sharyali16@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
