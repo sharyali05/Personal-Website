@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-  font-family: 'Inter', sans-serif; /* Inter applied */
+  font-family: 'Inter', sans-serif;
   background: #fafafa;
 }
 
@@ -107,7 +107,6 @@ h1 b {
   margin-top: 20px;
 }
 
-/* More space between About paragraph and Resume button */
 .links.spaced {
   margin-top: 40px;
 }
@@ -131,7 +130,6 @@ h1 b {
   color: white;
 }
 
-/* Bigger resume button in about section */
 .resume-link.big {
   font-size: 1.2rem;
   padding: 12px 24px;
@@ -144,6 +142,163 @@ section {
   padding: 0 2rem;
 }
 
+/* About Section */
+.about-header {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #004466;
+  position: relative;
+}
+
+.about-header::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #ccc;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  gap: 30px;
+}
+
+.about-card.shaded {
+  background: #f2f2f2;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Spacing between About section paragraphs */
+.about-text p {
+  margin-bottom: 1.4rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.about-divider {
+  width: 2px;
+  background: #e0e0e0;
+  align-self: stretch;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Education Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  background: #ccc;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timeline-tick {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  z-index: 1;
+  min-height: 260px;
+  font-size: 1.05rem;
+}
+
+.tick-down::after {
+  content: "▼";
+  font-size: 2rem;
+  color: #004466;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tick-up::after {
+  content: "▲";
+  font-size: 2rem;
+  color: #004466;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.edu-date.less-space {
+  margin-top: -30px;
+}
+
+.relevant-courses {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 900px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.edu-logo {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.edu-date {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#education {
+  background-color: #fdf6e3;
+  width: 100%;
+  padding: 60px 2rem;
+  box-sizing: border-box;
+}
+
 /* Experience Cards */
 .experience-card {
   display: flex;
@@ -154,8 +309,8 @@ section {
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  line-height: 1.6;     /* More spacing between lines */
-  min-height: 300px;    /* Make cards square-like and uniform */
+  line-height: 1.6;
+  min-height: 300px;
 }
 
 .experience-logo img {
@@ -269,162 +424,6 @@ section {
   margin-bottom: 10px;
 }
 
-/* About Section */
-.about-header {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  color: #004466;
-  position: relative;
-}
-
-.about-header::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: #ccc;
-  margin: 10px auto 0 auto;
-  border-radius: 2px;
-}
-
-.about-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  gap: 30px;
-}
-
-.about-card.shaded {          
-  background: #f2f2f2;
-}
-
-.about-text {
-  flex: 1;
-  text-align: left;
-}
-
-.about-divider {
-  width: 2px;
-  background: #e0e0e0;
-  align-self: stretch;
-}
-
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Education Timeline */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  gap: 40px;
-  margin-top: 30px;
-}
-
-.timeline-line {
-  position: absolute;
-  width: 4px;
-  background: #ccc;
-  top: 20px;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-}
-
-.timeline-tick {
-  position: relative;
-  width: 80%;
-  max-width: 700px;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  z-index: 1;
-  min-height: 260px;   /* Force both education cards to same size */
-  font-size: 1.05rem;  /* slightly bigger text */
-}
-
-.tick-down::after {
-  content: "▼";
-  font-size: 2rem;
-  color: #004466;
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.tick-up::after {
-  content: "▲";
-  font-size: 2rem;
-  color: #004466;
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* more spacing between lines in education cards and slightly larger text */
-.timeline-content p {
-  line-height: 1.8;
-  font-size: 1.05rem;
-  color: #333;
-}
-
-/* Small adjustment: less space between Berkeley logo and its date only */
-.edu-date.less-space {
-  margin-top: -30px; /* reduces gap under the berkeley logo only */
-}
-
-/* Relevant courses */
-.relevant-courses {
-  margin: 40px auto;
-  text-align: center;
-  max-width: 900px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Education logos */
-.edu-logo {
-  max-width: 250px;
-  height: auto;
-  margin-bottom: 8px;
-}
-
-/* Graduation dates */
-.edu-date {
-  color: #555;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-/* Full-width Education Section */
-#education {
-  background-color: #fdf6e3;
-  width: 100%;
-  padding: 60px 2rem;
-  box-sizing: border-box;
-}
-
 /* Contact Section */
 .contact-cards {
   display: flex;
@@ -451,10 +450,9 @@ section {
 
 .contact-icon {
   font-size: 2.5rem;
-  color: #004466; /* LinkedIn & email icons color */
+  color: #004466;
 }
 
-/* new class for the image logo in contact */
 .contact-logo {
   width: 36px;
   height: 36px;
@@ -495,8 +493,14 @@ section {
   }
   .experience-card {
     min-height: auto;
+    flex-direction: column;
+    text-align: center;
   }
   .timeline-tick {
     min-height: auto;
+  }
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
